@@ -1,0 +1,6 @@
+category: Graphics Gnome
+requires: cygwin atk glib2 gtk2-x11 libgnomeprint22 libgnomeprintui22
+sdesc: "GNOME paint program"
+ldesc: "This is GNU Paint, a small-scale painting program for GNOME, the 
+GNU Desktop.  Gpaint does not attempt to compete with GIMP.  Think of 
+GIMP is like Photoshop as gpaint is like Windows Paint."
