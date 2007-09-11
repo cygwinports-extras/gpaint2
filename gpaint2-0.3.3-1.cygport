@@ -1,0 +1,6 @@
+inherit gnome2
+
+DESCRIPTION="GNOME paint program"
+HOMEPAGE="http://www.gnu.org/software/gpaint/"
+SRC_URI="ftp://alpha.gnu.org/gnu/${PN%2}/${PN%2}-2-${PV}.tar.gz"
+SRC_DIR="${PN%2}-2-${PV}"
