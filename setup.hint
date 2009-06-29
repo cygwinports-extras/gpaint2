@@ -1,5 +1,5 @@
 category: Graphics Gnome
-requires: cygwin atk glib2 gtk2-x11 libcairo2 libglade2 libintl8 pango
+requires: atk glib2 gtk2-x11 libcairo2 libglade2 libintl8 pango
 sdesc: "GNOME paint program"
 ldesc: "This is GNU Paint, a small-scale painting program for GNOME, the 
 GNU Desktop.  Gpaint does not attempt to compete with GIMP.  Think of 
