@@ -1,0 +1,13 @@
+text.c: In function 'set_layout_foreground_color':
+text.c:472:5: error: implicit declaration of function 'color16'
+
+--- origsrc/gpaint-2-0.3.3/src/text.c	2013-10-30 23:50:58.665511200 -0500
++++ src/gpaint-2-0.3.3/src/text.c	2013-10-31 00:17:18.092849300 -0500
+@@ -41,6 +41,7 @@
+ 
+ #include "text.h"
+ #include "debug.h"
++#include "util.h"
+ 
+ 
+ #define TEXT_CURSOR_WIDTH      2

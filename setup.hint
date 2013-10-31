@@ -1,6 +1,0 @@
-category: Graphics Gnome
-requires: libatk1.0_0 libcairo2 libgcc1 libgdk_pixbuf2.0_0 libglade2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0
-sdesc: "GNOME paint program"
-ldesc: "This is GNU Paint, a small-scale painting program for GNOME, the 
-GNU Desktop.  Gpaint does not attempt to compete with GIMP.  Think of 
-GIMP is like Photoshop as gpaint is like Windows Paint."

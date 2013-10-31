@@ -1,0 +1,31 @@
+inherit gnome2
+
+NAME="gpaint2"
+VERSION=0.3.3
+RELEASE=3
+CATEGORY="Graphics"
+SUMMARY="GNOME paint program"
+DESCRIPTION="GNU Paint (gpaint) is a simple, easy-to-use paint program for
+GNOME, the GNU Desktop. Gpaint starts as a port of xpaint and takes advantage
+of features unique to the GNOME environment."
+HOMEPAGE="http://www.gnu.org/software/gpaint/"
+SRC_URI="ftp://alpha.gnu.org/gnu/gpaint/gpaint-2-${VERSION}.tar.gz"
+SRC_DIR="gpaint-2-${VERSION}"
+
+PATCH_URI="
+	http://patch-tracker.debian.org/patch/series/dl/gpaint/0.3.3-6.1/01_drawing.diff
+	http://patch-tracker.debian.org/patch/series/dl/gpaint/0.3.3-6.1/02_remove_menu_h_reference.diff
+	http://patch-tracker.debian.org/patch/series/dl/gpaint/0.3.3-6.1/10_fix_crash_on_font_select.diff
+	http://patch-tracker.debian.org/patch/series/dl/gpaint/0.3.3-6.1/11_fix_image_rotation.diff
+	http://patch-tracker.debian.org/patch/series/dl/gpaint/0.3.3-6.1/20_fix_line_width_combo.diff
+	http://patch-tracker.debian.org/patch/series/dl/gpaint/0.3.3-6.1/21_fix_crash_on_fill_button_click.diff
+	http://patch-tracker.debian.org/patch/series/dl/gpaint/0.3.3-6.1/22_fix_not_printable_string.diff
+	http://patch-tracker.debian.org/patch/series/dl/gpaint/0.3.3-6.1/23_add_accelerator_keys.diff
+	http://patch-tracker.debian.org/patch/series/dl/gpaint/0.3.3-6.1/24_fix_crash_on_failed_write.diff
+	http://patch-tracker.debian.org/patch/series/dl/gpaint/0.3.3-6.1/25_fix_color_selection.diff
+	http://patch-tracker.debian.org/patch/series/dl/gpaint/0.3.3-6.1/26_fix_toolbar.diff
+	http://patch-tracker.debian.org/patch/series/dl/gpaint/0.3.3-6.1/27_fix_missing_hdrs_libs.diff
+	0.3.3-Winherit-decls.patch
+"
+
+MAKEOPTS+=" gpaint_2_LDFLAGS=-Wl,--export-all-symbols"
